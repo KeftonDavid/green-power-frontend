@@ -1,0 +1,16 @@
+.bg-img{
+    background-image: url("../../assets/greenturbines.jpeg");
+}
+
+
+.plus.change{
+    display: none;
+}
+
+.minus{
+    display: none;
+}
+
+.minus.change{
+    display: block;
+}
