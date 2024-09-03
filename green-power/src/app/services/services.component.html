@@ -1,15 +1,15 @@
-<div class="w-full h-full py-4 flex flex-col items-center gap-4">
-    <div class="w-fit items-center justify-center border-b-4 p-2 border-secondary h-24 flex flex-col">
+<div class="w-full h-full bg-gradient-to-b from-base-100 to-primary my-4 flex flex-col items-center gap-10">
+    <div class="w-fit items-center justify-center border-b-4 mb-10 p-2 border-secondary h-24 flex flex-col">
         <h1 class="text-5xl text-neutral">Serviços</h1>
         <p class="text-sm text-secondary font-extrabold">o que fazemos com excelência</p>
     </div>
 
     <!-- Card -->
-    <div class="w-11/12 p-4 sm:p-8 card rounded-md bg-base-100/85 shadow-2xl">
+    <div class="w-11/12 p-4 sm:p-8 card transition-transform transform hover:scale-105 rounded-md bg-base-100/85 shadow-2xl">
         <div class="flex flex-col gap-4">
             <div class="text-neutral">
                 <h1 class="text-2xl mb-4 font-bold text-secondary">O&M</h1>
-                <p class="text-justify">O serviço de Operação e Manutenção bem executadas resultam em uma base sólida para o funcionamento dos parques eólicos e solares.</p>
+                <p class="text-justify">O serviço de Operação e Manutenção (O&M) bem executado resulta em uma base sólida para o funcionamento dos parques eólicos e solares.</p>
             </div>
             
             <div class="flex flex-row items-center mt-4 justify-end">
@@ -66,77 +66,8 @@
         </div>
     </div>
 
-
     <!-- Card -->
-    <div class="w-11/12 p-4 sm:p-8 card rounded-md bg-base-100/85 shadow-2xl">
-        <div class="flex flex-col gap-4">
-            <div class="text-neutral">
-                <h1 class="text-2xl mb-4 font-bold text-secondary">Manutenção preventiva e corretiva</h1>
-                <p class="text-justify">As manutenções preventivas e corretivas garantirão a máxima vida útil dos componentes.</p>
-            </div>
-            
-            <div class="flex flex-row items-center mt-4 justify-end">
-                <p class="text-primary font-extrabold mr-4">Exibir detalhes</p>
-                <button (click)="details(1)" class="btn btn-primary">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="plus text-base-100 w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="minus text-base-100 w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
-                    </svg> 
-                </button>
-            </div>
-        </div>
-
-        <div class="details overflow-hidden max-h-0 transition-all">
-            <div class="border-t-4 border-primary w-full mt-2">
-                <p class="text-secondary font-bold mt-4">Manutenção preventiva e corretiva de parques eólicos</p>
-                <ul class="list-disc mt-1 ml-4 text-neutral">
-                    <li class="font-extrabold">Lubrificação de componentes mecânicos:</li>
-                    <p class="ml-2 mb-2">Componentes mecânicos como rolamentos e caixas de engrenagens requerem lubrigicação regular para o seu funcionamento eficiente.</p>
-                    
-                    <li class="font-extrabold">Calibração de Sistemas de Controle e Monitoramento:</li>
-                    <p class="ml-2 mb-2">Os sistemas de controle e monitoramento das turbinas eólicas devem ser verificados regularmente para garantir que estejam operando corretamente. Isso inclui a calibração de sensores e a revisão de sistemas de segurança.</p>
-                    
-                    <li class="font-extrabold">Testes de Segurança e Paradas de Emergência:</li>
-                    <p class="ml-2 mb-2">Realizar testes de segurança e de paradas de emergência para garantir que, em caso de mau funcionamento ou condições climáticas extremas, as turbinas possam ser desligadas de forma segura.</p>
-                    
-                    <li class="font-extrabold">Limpeza de Equipamentos e Remoção de Detritos:</li>
-                    <p class="ml-2 mb-2">Manter as turbinas eólicas livres de sujeira, poeira e detritos é fundamental para manter o desempenho ótimo. Isso inclui a remoção de ninhos de aves e outros obstáculos que possam obstruir o funcionamento das pás.</p>
-                    
-                    <li class="font-extrabold">Reparo de danos mecânicos:</li>
-                    <p class="ml-2 mb-2">Quando ocorrem danos mecânicos, como falhas em rolamentos ou danos nas pás, é necessário repará-los imediatamente para evitar a interrupção da produção de energia.</p>
-
-                    <li class="font-extrabold">Substituição de componentes danificados:</li>
-                    <p class="ml-2 mb-2">Componentes críticos que não podem ser reparados, como geradores ou caixas de engrenagens, podem precisar ser substituídos em caso de falhas graves.</p>
-
-                    <li class="font-extrabold">Intervenção em sistemas elétricos:</li>
-                    <p class="ml-2 mb-2">Problemas elétricos, como mau funcionamento de inversores ou falhas no sistema de transmissão, requerem intervenção imediata para restaurar a operação normal da usina.</p>
-                </ul>
-
-                <p class="text-secondary font-bold mt-4">Manutenção preventiva e corretiva de parques solares</p>
-                <ul class="list-disc mt-1 ml-4 text-neutral">
-                    <li class="font-extrabold">Limpeza dos painés solares:</li>
-                    <p class="ml-2 mb-2">A limpeza regular é necessária, especialmente em áreas com clima seco ou com muita poluição.</p>
-                    
-                    <li class="font-extrabold">Teste de Cabos e Conexões Elétricas:</li>
-                    <p class="ml-2 mb-2">Verificar a integridade dos cabos e das conexões elétricas é crucial para evitar perdas de energia devido a má conexão ou deterioração dos componentes.</p>
-                    
-                    <li class="font-extrabold">Monitoramento de Inversores Solares:</li>
-                    <p class="ml-2 mb-2">Os inversores solares são elementos críticos na conversão da energia solar em eletricidade utilizável. Realizar verificações regulares em seus parâmetros e desempenho é fundamental.</p>
-
-                    <li class="font-extrabold">Verificação do Sistema de Montagem:</li>
-                    <p class="ml-2 mb-2">Garantir que a estrutura de suporte dos painéis solares esteja em bom estado é importante. Verificar a fixação e a integridade das estruturas é essencial para evitar danos causados por ventos fortes ou outras condições climáticas adversas.</p>
-
-                    <li class="font-extrabold">Teste de Desempenho e Eficiência Energética:</li>
-                    <p class="ml-2 mb-2">Além das inspeções visuais, realizar testes de desempenho periódicos ajuda a avaliar a eficiência do sistema e garantir que a usina solar esteja operando de acordo com as expectativas.</p>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- Card -->
-    <div class="w-11/12 p-4 sm:p-8 card rounded-md mb-8 bg-base-100/85 shadow-2xl">
+    <div class="w-11/12 p-4 sm:p-8 card transition-transform transform hover:scale-105 rounded-md mb-8 bg-base-100/85 shadow-2xl">
         <div class="flex flex-col gap-4">
             <div class="text-neutral">
                 <h1 class="text-2xl mb-4 font-bold text-secondary">Consultoria</h1>
@@ -145,7 +76,7 @@
             
             <div class="flex flex-row items-center mt-4 justify-end">
                 <p class="text-primary font-extrabold mr-4">Exibir detalhes</p>
-                <button (click)="details(2)" class="btn btn-primary">
+                <button (click)="details(1)" class="btn btn-primary">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="plus text-base-100 w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                     </svg>
