@@ -1,22 +1,23 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit {
 
   text!: string;
-  words: string[] = ["INSTALAÇÃO", "MONTAGEM", "MANUTENÇÃO", "INSPEÇÃO", "CONSULTORIA"];
+  words: string[] = ["O&M", "MANUTENÇÕES PREVENTIVAS", "MANUTENÇÕES CORRETIVAS", "CONSULTORIA"];
 
   ngOnInit(): void {
     this.text = this.words[0];
     setInterval(() => {
       this.updateText();
-    }, 750)
+    }, 1500)
   }
 
   updateText(){
