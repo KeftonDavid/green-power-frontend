@@ -1,5 +1,8 @@
 .bg-img{
-    background-image: url("../../assets/greenturbines.jpeg");
+    background-image: url("../../assets/greenturbinesprofile3.jpeg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 
