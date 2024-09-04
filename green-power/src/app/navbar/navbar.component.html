@@ -1,12 +1,12 @@
-<div class="navbar bg-base-100 border-b border-primary">
+<div class="navbar z-50 bg-base-100 shadow-lg">
     <div class="navbar-start">
         <a href=""><img class=" h-12 w-12" src="../../assets/vetor_green_power.png" alt=""></a>
     </div>
-    <div [ngClass]="navbarOpen ? 'max-h-80' : ''" class="button-group absolute flex flex-col top-16 overflow-hidden max-h-0 left-0 right-0 transition-all bg-primary/90 navbar-center sm:bg-transparent z-10 sm:flex-row sm:relative sm:max-h-max sm:m-0 sm:top-0">
-        <button routerLink="" class="btn btn-ghost mx-2 text-base-100 sm:text-neutral" (click)="toggleNavbar()">Início</button>
-        <button routerLink="about" class="btn btn-ghost mx-2 text-base-100 sm:text-neutral" (click)="toggleNavbar()">Sobre</button>
-        <button routerLink="services" class="btn btn-ghost mx-2 text-base-100 sm:text-neutral" (click)="toggleNavbar()">Serviços</button>
-        <button routerLink="contact" class="btn btn-ghost mx-2 text-base-100 sm:text-neutral" (click)="toggleNavbar()">Contato</button>
+    <div [ngClass]="navbarOpen ? 'max-h-80 py-2 sm:py-0' : ''" class="button-group absolute flex flex-col top-16 overflow-hidden max-h-0 left-0 right-0 transition-all bg-primary/90 navbar-center sm:bg-transparent z-30 sm:flex-row sm:relative sm:max-h-max sm:m-0 sm:top-0">
+        <button routerLink="home" routerLinkActive="btn-active" class="btn btn-ghost mx-2 text-base-100 sm:text-neutral" (click)="toggleNavbar()">Início</button>
+        <button routerLink="about" routerLinkActive="btn-active" class="btn btn-ghost mx-2 text-base-100 sm:text-neutral" (click)="toggleNavbar()">Sobre</button>
+        <button routerLink="services" routerLinkActive="btn-active" class="btn btn-ghost mx-2 text-base-100 sm:text-neutral" (click)="toggleNavbar()">Serviços</button>
+        <button routerLink="contact" routerLinkActive="btn-active" class="btn btn-ghost mx-2 text-base-100 sm:text-neutral" (click)="toggleNavbar()">Contato</button>
     </div>
     <div class="sm:invisible ml-auto navbar-end">
         <button class="btn btn-circle btn-ghost text-primary font-bold" (click)="toggleNavbar()">
