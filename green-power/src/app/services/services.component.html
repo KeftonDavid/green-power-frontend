@@ -1,108 +1,100 @@
-<div class="w-full h-full bg-gradient-to-b from-primary to-base-100 flex flex-col items-center gap-4">
-    <div class="w-fit items-center text-base-100 justify-center mt-4 p-2 h-24 flex flex-col">
-        <h1 class="text-5xl">Serviços</h1>
-        <p class="text-sm font-extrabold">o que fazemos com excelência</p>
-    </div>
-
-    <!-- Card -->
-    <div class="w-11/12 p-4 sm:p-8 card transition-transform transform hover:scale-105 rounded-md bg-base-100/85 shadow-2xl">
-        <div class="flex flex-col gap-4">
-            <div class="text-neutral">
-                <h1 class="text-2xl mb-4 font-bold text-secondary">O&M</h1>
-                <p class="text-justify">O serviço de Operação e Manutenção (O&M) bem executado resulta em uma base sólida para o funcionamento dos parques eólicos e solares.</p>
+<div class=" bg-img">
+    <div class="w-full h-full flex flex-col items-center gap-4 bg-black/60">
+        <div class="w-fit items-center text-base-100 justify-center mt-4 p-2 h-24 flex flex-col">
+            <h1 class="text-5xl">Serviços</h1>
+            <p class="text-sm font-extrabold">o que fazemos com excelência</p>
+        </div>
+    
+        <!-- Card -->
+        <div class="w-11/12 p-4 sm:p-8 card transition-transform transform hover:scale-105 mb-2 rounded-md bg-base-100/85 shadow-2xl">
+            <div class="flex flex-col gap-4">
+                <div class="text-neutral">
+                    <h1 class="text-2xl mb-4 font-bold text-neutral">O&M</h1>
+                    <p class="text-justify">O serviço de Operação e Manutenção (O&M) bem executado resulta em uma base sólida para o funcionamento dos parques eólicos.</p>
+                </div>
+                
+                <div class="flex flex-row items-center mt-4 justify-end">
+                    <p class="text-primary font-extrabold mr-4">Exibir detalhes</p>
+                    <button (click)="details(0)" class="btn btn-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="plus text-base-100 w-6 h-6 ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="minus text-base-100 w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+                        </svg>                  
+                    </button>
+                </div>
             </div>
-            
-            <div class="flex flex-row items-center mt-4 justify-end">
-                <p class="text-primary font-extrabold mr-4">Exibir detalhes</p>
-                <button (click)="details(0)" class="btn btn-primary">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="plus text-base-100 w-6 h-6 ">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="minus text-base-100 w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
-                    </svg>                  
-                </button>
+    
+            <div class="details overflow-hidden max-h-0 transition-all">
+                <div class="border-t-4 border-primary w-full mt-2">
+                    <p class="text-neutral font-bold mt-4">Manutenção preventiva</p>
+                    <p class="mt-1 ml-6 text-neutral mb-2">Manuteção preventiva elétrica e mecânica, nas turbinas eólicas, torque de parafusos e prisioneiros, dos segmentos da nacelle e hub, lubrificação dos rolamentos e roletes do segmento de pitch,troca de óleo dos redutores, dentre outros.</p>
+                    
+                    <p class="text-neutral font-bold mt-4">Manutenção corretiva</p>
+                    <p class="mt-1 ml-6 text-neutral mb-2">Manutenção corretiva eletrica e mecânica, analise de falhas via programa operacional do aerogerador, substituição de componentes, operação remota e local, dentre outros.</p>
+                    
+                    <p class="text-neutral font-bold mt-4">Manutenção preditiva</p>
+                    <p class="mt-1 ml-6 text-neutral mb-2">Inspeções, afim de identificar danos, sanar futuras corretivas mecânicas e elétricas, retirada de pendências, aplicação de melhorias, dentre outros.</p>
+                    
+                    <p class="text-neutral font-bold mt-4">Inspeções e mapeamento de anomalias</p>
+                    <p class="mt-1 ml-6 text-neutral mb-2">Inspeções periódicas ou à pedido do cliente, a fim de mapear possíveis anomalias que afetem o desempenho das máquinas.</p>
+                    
+                    <p class="text-neutral font-bold mt-4">Planos de ação</p>
+                    <p class="mt-1 ml-6 text-neutral mb-2">Relatórios detalhados com sugestões de medidas corretivas de acordo com as anomalias detectadas.</p>
+                    
+                    <p class="text-neutral font-bold mt-4">Soluções e melhorias</p>
+                    <p class="mt-1 ml-6 text-neutral mb-2">Soluções que impliquem no funcionamento correto e otimizado das máquinas.</p>
+                    
+                </div>
             </div>
         </div>
-
-        <div class="details overflow-hidden max-h-0 transition-all">
-            <div class="border-t-4 border-primary w-full mt-2">
-                <p class="text-secondary font-bold mt-4">Montagem e instalação de parques eólicos</p>
-                <ul class="list-disc mt-1 ml-4 text-neutral">
-                    <li class="font-extrabold">Montagem e instalação de torres eólicas:</li>
-                    <p class="ml-2 mb-2">Montagem e instalação de turbinas, estruturas de suporte, conversores, pás, geradores e entre outros.</p>
+    
+        <!-- Card -->
+        <div class="w-11/12 p-4 sm:p-8 card transition-transform transform hover:scale-105 mb-2 rounded-md bg-base-100/85 shadow-2xl">
+            <div class="flex flex-col gap-4">
+                <div class="text-neutral">
+                    <h1 class="text-2xl mb-4 font-bold text-neutral">Consultoria</h1>
+                    <p class="text-justify">A consultoria desempenha um papel crucial no setor de energia eólica, impulsionando a modernização das usinas, orientando decisões estratégicas e promovendo a inovação tecnológica.</p>
+                </div>
+                
+                <div class="flex flex-row items-center mt-4 justify-end">
+                    <p class="text-primary font-extrabold mr-4">Exibir detalhes</p>
+                    <button (click)="details(1)" class="btn btn-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="plus text-base-100 w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="minus text-base-100 w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+                        </svg> 
+                    </button>
+                </div>
+            </div>
+    
+            <div class="details overflow-hidden max-h-0 transition-all">
+                <div class="border-t-4 border-primary w-full mt-2">
+                    <p class="text-neutral font-bold mt-4">Prestação de consultoria especializada</p>
+                    <p class="mt-1 ml-6 text-neutral mb-2">A empresa oferece orientação especializada em energia eólica, auxiliando na tomada de decisões do seu negócio.</p>
+        
+                    <p class="text-neutral font-bold mt-4">Avaliação de viabilidade de projetos</p>
+                    <p class="mt-1 ml-6 text-neutral mb-2">Avalia a viabilidade de projetos, levando em consideração fatores técnicos, econômicos e ambientais.</p>
                     
-                    <li class="font-extrabold">Instalação de sistemas de transmissão e interconexão:</li>
-                    <p class="ml-2 mb-2">Instalação de sistemas de cabos e subestações para conectar a energia gerada à rede elétrica.</p>
                     
-                    <li class="font-extrabold">Conexão à rede elétrica:</li>
-                    <p class="ml-2 mb-2">Integração das usinas solares com a rede elétrica.</p>
-                    
-                    <li class="font-extrabold">Montagem de sistemas de controle e monitoramento:</li>
-                    <p class="ml-2 mb-2">Sistemas integrados de supervisionamento de desempenho das turbinas, garantindo o funcionamento eficiente e seguro.</p>
-                </ul>
-
-                <p class="text-secondary font-bold mt-4">Montagem e instalação de parques solares</p>
-                <ul class="list-disc mt-1 ml-4 text-neutral">
-                    <li class="font-extrabold">Instalação de painéis solares fotovoltaicos:</li>
-                    <p class="ml-2 mb-2">Instalação dos painés nas estruturas de suporte levando em conta o melhor posicionamento para a captura de energia solar.</p>
-
-                    <li class="font-extrabold">Montagem de estruturas de suporte para os painéis:</li>
-                    <p class="ml-2 mb-2">São instaladas as estruturas de suporte, que podem ser racks, suportes ou seguidores solares, dependendo do tipo de sistema solar. Essas estruturas são fixadas ao solo ou às fundações.</p>
-                    
-                    <li class="font-extrabold">Instalação de inversores solares e outros equipamentos de conversão:</li>
-                    <p class="ml-2 mb-2">Os inversores convertem a corrente contínua gerada pelos painéis solares em corrente alternada que pode ser conectada à rede elétrica.</p>
-                    
-                    <li class="font-extrabold">Conexão à rede elétrica:</li>
-                    <p class="ml-2 mb-2">Os painéis solares são conectados por meio de fios elétricos a inversores, que convertem a energia solar em eletricidade utilizável. Essa eletricidade é então conectada à rede elétrica ou armazenada em baterias.</p>
-
-                    <li class="font-extrabold">Integração de sistemas de armazenamento de energia:</li>
-                    <p class="ml-2 mb-2">Instalação e montagem de sistemas de armazenamento para armazenar a energia excedente.</p>
-
-                    <li class="font-extrabold">Instalação de sistemas de controle e monitoramento:</li>
-                    <p class="ml-2 mb-2">Sistemas integrados de supervisionamento de desempenho dos painés, sua captação de luz solar e o sistema como um todo.</p>
-                </ul>
+                    <p class="text-neutral font-bold mt-4">Assessoria em questões regulatórias e ambientais</p>
+                    <p class="mt-1 ml-6 text-neutral mb-2">Ajuda os clientes a navegar pelas complexas regulamentações e a cumprir os requisitos ambientais em vigor.</p>       
+                </div>
             </div>
         </div>
-    </div>
-
-    <!-- Card -->
-    <div class="w-11/12 p-4 sm:p-8 card transition-transform transform hover:scale-105 rounded-md mb-8 bg-base-100/85 shadow-2xl">
-        <div class="flex flex-col gap-4">
-            <div class="text-neutral">
-                <h1 class="text-2xl mb-4 font-bold text-secondary">Consultoria</h1>
-                <p class="text-justify">A consultoria desempenha um papel de extrema importância no setor de usinas eólicas e solares, possibilitando a atualização de usinas, tomada de decisões e inovação tecnológica.</p>
-            </div>
-            
-            <div class="flex flex-row items-center mt-4 justify-end">
-                <p class="text-primary font-extrabold mr-4">Exibir detalhes</p>
-                <button (click)="details(1)" class="btn btn-primary">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="plus text-base-100 w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="minus text-base-100 w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
-                    </svg> 
-                </button>
-            </div>
-        </div>
-
-        <div class="details overflow-hidden max-h-0 transition-all">
-            <div class="border-t-4 border-primary w-full mt-2">
-                <p class="text-secondary font-bold mt-4">Consultoria das tecnologias eólica e solar</p>
-                <ul class="list-disc mt-1 ml-4 text-neutral">
-                    <li class="font-extrabold">Prestação de consultoria especializada:</li>
-                    <p class="ml-2 mb-2">A empresa oferece orientação especializada em energia eólica e solar, auxiliando na tomada de decisões do seu negócio.</p>
-                    
-                    <li class="font-extrabold">Avaliação de viabilidade de projetos:</li>
-                    <p class="ml-2 mb-2">Avalia a viabilidade de projetos de energia renovável, levando em consideração fatores técnicos, econômicos e ambientais.</p>
-                    
-                    <li class="font-extrabold">Assessoria em questões regulatórias e ambientais:</li>
-                    <p class="ml-2 mb-2">Ajuda os clientes a navegar pelas complexas regulamentações e a cumprir os requisitos ambientais em vigor.</p>       
-                </ul>
+    
+        <div class="w-11/12 p-4 sm:p-8 card transition-transform transform hover:scale-105 rounded-md mb-8 bg-base-100/85 shadow-2xl">
+            <div class="flex flex-col gap-4">
+                <div class="text-neutral">
+                    <h1 class="text-2xl mb-4 font-bold text-neutral">Fornecimento de equipamentos e materiais</h1>
+                    <p class="text-justify">Soluções completas em equipamentos e materiais de alta performance para parques eólicos.</p>
+                </div>
+                
             </div>
         </div>
     </div>
-
 
 </div>
