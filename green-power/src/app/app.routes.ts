@@ -13,6 +13,7 @@ export const routes: Routes = [
     { path: 'contact', component: ContactComponent },
     { path: 'privacy', component: PrivacyPolicyComponent },
     { path: 'terms', component: TermsOfUseComponent },
-    { path: '', component: HomeComponent },
+    { path: 'home', component: HomeComponent },
+    { path: '', pathMatch: 'full', redirectTo: 'home' },
     { path: '**', component: PageNotFoundComponent }
 ];
