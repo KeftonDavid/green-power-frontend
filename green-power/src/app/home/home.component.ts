@@ -11,7 +11,7 @@ import { RouterLink } from '@angular/router';
 export class HomeComponent implements OnInit, AfterViewInit {
 
   text!: string;
-  words: string[] = ["O&M", "MANUTENÇÕES PREVENTIVAS", "MANUTENÇÕES CORRETIVAS", "CONSULTORIA"];
+  words: string[] = ["O&M", "MANUTENÇÕES PREVENTIVAS", "MANUTENÇÕES CORRETIVAS", "CONSULTORIA", "FORNECIMENTO DE EQUIPAMENTOS", "FORNECIMENTO DE MATERIAIS"];
 
   ngOnInit(): void {
     this.text = this.words[0];
