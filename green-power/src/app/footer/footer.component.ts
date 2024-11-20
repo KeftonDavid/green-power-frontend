@@ -9,5 +9,8 @@ import { RouterLink, RouterLinkActive, RouterModule, RouterOutlet } from '@angul
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-
+  openSitemap(){
+    const sitemap = '/assets/sitemap.xml';
+    window.open(sitemap, '_blank');
+  }
 }
