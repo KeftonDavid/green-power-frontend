@@ -17,7 +17,7 @@
 - **Angular** – Estrutura principal do projeto
 - **Tailwind CSS** – Estilização rápida e responsiva
 - **DaisyUI** – Componentes prontos integrados ao Tailwind
-- **
+- **Google Maps** - Integração com Google Maps API para mostrar a localização da empresa
 
 ### Infraestrutura e Hospedagem
 - **VPS Hostinger KVM1** com **Ubuntu 24.04 LTS**
