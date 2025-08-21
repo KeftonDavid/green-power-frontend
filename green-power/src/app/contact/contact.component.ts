@@ -30,7 +30,7 @@ export class ContactComponent implements AfterViewInit {
       "maxZoom": 17,
       "mapId": ""
     },
-    "mapsApiKey": "AIzaSyCuV32MoWVF0NjfuZRzzVSoBizOGyGYg04",
+    "mapsApiKey": "API_KEY",
     "capabilities": {
       "input": false,
       "autocomplete": false,
